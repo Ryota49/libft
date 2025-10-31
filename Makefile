@@ -86,3 +86,6 @@ re: fclean all
 
 %.o : %.c
 	$(CC) $(CFLAGS) -c $< -o $@
+
+.PHONY :
+		all clean fclean re
