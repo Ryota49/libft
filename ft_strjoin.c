@@ -44,6 +44,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*new_string;
 	size_t	total_len;
 
+	if (!s1 || !s2)
+		return (NULL);
 	total_len = ft_strlen(s1) + ft_strlen(s2);
 	new_string = malloc(sizeof(char) * total_len + 1);
 	if (!new_string)
